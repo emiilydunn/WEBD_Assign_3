@@ -1,182 +1,192 @@
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    nav {
-        text-align: center;
-    }
-
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
-    .grid-container{
-        grid-template-columns: 1fr;
-    }
-}
-
 body {
     background-color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
-}
-
-nav li {
+  }
+  
+  nav li {
     display: inline-block;
     margin-right: 20px;
-}
-
-nav a {
+  }
+  
+  nav a {
     text-decoration: none;
     color: #fff;
     font-size: 10px;
     transition: color 0.3s ease;
-
-}
-
-header {
+  }
+  
+  header {
     display: inline-block;
     align-items: center;
     justify-content: center;
     background-color: rgb(50, 50, 50);
     width: 100%;
-    height: 45px;
+    /* height: 45px; */
     cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "San Francisco";
     color: whitesmoke;
-}
-
-header a {
+  }
+  
+  header a {
     padding: 0px 15px;
     font-size: 15px;
     text-decoration: none;
     color: rgb(179, 179, 179);
     cursor: pointer;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     color: lightgray;
-}
-
-.logo {
+  }
+  
+  .logo {
     max-width: 15px;
-}
-
-.hero-white {
+  }
+  
+  .hero-white {
     color: black;
     background-color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:25px;
-}
-
-.apple{
+    font-family: "San Francisco";
+    font-size: 25px;
+  }
+  
+  .apple {
     max-width: 60px;
     padding-top: 15px;
-    padding-bottom:5px;
-}
-
-.shop-now {
+    padding-bottom: 5px;
+  }
+  
+  .shop-now {
     color: rgb(4, 101, 204);
     text-decoration: none;
     font-size: 18px;
-}
-
-.shop-now:hover {
+  }
+  
+  .shop-now:hover {
     text-decoration: underline;
-}
-
-.link {
+  }
+  
+  .link {
     color: rgb(4, 101, 204);
     text-decoration: none;
-}
-
-.link:hover {
+  }
+  
+  .link:hover {
     text-decoration: underline;
-}
-
-.iphone{
+  }
+  
+  .iphone {
     max-width: 600px;
     padding-bottom: 50px;
-}
-
-.hero-black{
+  }
+  
+  .hero-black {
     background-color: black;
-    color:white;
+    color: white;
     max-width: 3100px;
     height: 550px;
     background-image: url("Images/5.png");
     background-position: bottom center;
     background-repeat: no-repeat;
-}
-
-.hero-black h1{
-font-size: 50px;
-}
-
-.hero-black p1{
-font-size: 25px;
-}
-
-.hero-black p{
-font-size: 15px;
-}
-
-.hero-black .link{
+  }
+  
+  .hero-black h1 {
+    font-size: 50px;
+  }
+  
+  .hero-black p1 {
+    font-size: 25px;
+  }
+  
+  .hero-black p {
+    font-size: 15px;
+  }
+  
+  .hero-black .link {
     font-size: 20px;
     margin-right: -30px;
-}
-
-.grid-container {
+  }
+  
+  .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    padding: 0;
-    grid-row-gap:10px;
-    grid-column-gap:20px;
-    margin: 50px auto;
-    max-width: 1200px;
-}
-
-.grid-item{
-    /*background-color: rgb(250, 250, 250);*/
-    background-color:red;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 20px 0 20px;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    margin: 35px auto 0 auto;
+  }
+  
+  .grid-item {
+    background-color: rgb(250, 250, 250);
+    /*background-color: red;*/
     padding: 20px;
     text-align: center;
-    color:black;
-    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    font-family: "San Francisco";
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.grid-item h1{
-    font-size: 25px;
-    margin-bottom: 5px;
-    margin-top: 0px;
-    }
-
-.grid-item h2{
-    font-size:15px;
-    margin-top: 5px;
+  }
+  
+  .grid-item h1 {
+    font-size: 35px;
+  }
+  
+  .grid-item h2 {
+    font-size: 15px;
+    margin-top: -20px;
     font-weight: bold;
-}
-
-.grid-item .gridlink{
+  }
+  
+  .gridLinkWrapper {
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .grid-item .gridlink {
     color: rgb(4, 101, 204);
     text-decoration: none;
     margin-top: 10px;
     display: inline-block;
-}
-
-.grid-item .gridlink:hover{
+    margin-right: 5px;
+  }
+  
+  .grid-item .gridlink:hover {
     text-decoration: underline;
-}
-
-.grid-image1,
-.grid-image2,
-.grid-image3,
-.grid-image4 {
-    max-width: 70%;
+  }
+  
+  .grid-image1,
+  .grid-image2,
+  .grid-image3,
+  .grid-image4 {
+    max-width: 60%;
     height: auto;
     margin: 0 auto;
-    position:relative;
-    bottom: -10px;
+    position: relative;
+    bottom: -40px;
+    padding-top: -50px;
+  }
+
+  @font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.svg#San Francisco Display Medium") format("svg")
 }
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    nav {
+      text-align: center;
+    }
+  
+    nav li {
+      display: block;
+      margin: 10px 0;
+    }
+    body .grid-container {
+      grid-row-gap: 20px;
+      grid-template-columns: 1fr;
+    }
+  }
+  
