@@ -219,5 +219,52 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero-white,
+  .hero-black {
+    padding: 20px; 
+  }
+
+  .grid-container {
+    padding: 20px; 
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .grid-item h1 {
+    font-size: 24px; 
+  }
+
+  .grid-item h2 {
+    font-size: 14px; 
+    margin-top: -10px;
+  }
+
+  .grid-image1,
+  .grid-image2,
+  .grid-image3,
+  .grid-image4 {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    padding-top: 0;
+  }
+}
   
   
